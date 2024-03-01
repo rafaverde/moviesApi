@@ -1,0 +1,24 @@
+{
+  "name": "moviesapi",
+  "version": "1.0.0",
+  "description": "API to create, consult and remove Movie database records developed in RocketSeat's Explorer Course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "keywords": [
+    "movie",
+    "api",
+    "database",
+    "study"
+  ],
+  "author": "Rafael Valverde",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
