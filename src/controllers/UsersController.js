@@ -47,7 +47,7 @@ class UsersController {
       throw new AppError("Este email já está em uso! Tente novamente.")
     }
 
-    user.name = name ?? user.name
+    user.name = name ?? user.name //Nullish operator, se estiver vazio, mantém o valor que já está.
     user.email = email ?? user.email
 
     if (password && !old_password) {
