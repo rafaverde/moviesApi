@@ -7,8 +7,8 @@ module.exports = {
       filename: path.resolve(__dirname, "src", "database", "database.db"),
     },
     pool: {
-      afterCreate: (conn, cb) => conn.run("PRAGMA foreing_keys = ON", cb),
-    }, //Ativa as funcionalidade de apagar em casacata campos relacionados
+      afterCreate: (conn, cb) => conn.run("PRAGMA foreign_keys = ON", cb),
+    },
     migrations: {
       directory: path.resolve(
         __dirname,
