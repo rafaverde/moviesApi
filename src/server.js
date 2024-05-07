@@ -9,12 +9,16 @@ const express = require("express")
 
 const routes = require("./routes")
 
+const uploadConfig = require("./configs/upload")
+
 migrationsRun()
 
 const app = express()
 
 app.use(cors())
 app.use(express.json())
+
+app.use("/files", express.static(uploadConfig.UPLOADS_FOLDER))
 
 app.use(routes)
 
